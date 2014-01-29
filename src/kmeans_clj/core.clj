@@ -2,8 +2,7 @@
   "A simple k-means clustering implementation."
   (:require [incanter.core :as i]
             [kmeans-clj.util :refer :all]
-            [clojure.core.async :refer [chan to-chan <!! close!]]
-            [incanter.stats :refer [cosine-similarity]]))
+            [clojure.core.async :refer [chan to-chan <!!]]))
 
 (defn cluster-vector
   [fe cluster]
